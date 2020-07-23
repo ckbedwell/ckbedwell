@@ -29,6 +29,9 @@ module.exports = env => merge(common(env), {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
+              modules: {
+                localIdentName: '[name]__[local]',
+              }
             },
           },
           'postcss-loader',
