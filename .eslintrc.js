@@ -2,7 +2,7 @@ module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 6
+    ecmaVersion: 6,
   },
   plugins: ['react-hooks'],
   env: {
@@ -20,12 +20,10 @@ module.exports = {
   settings: {
     react: {
       version: 'detect',
-    }
+    },
   },
   rules: {
     camelcase: [0],
-    indent: ['warn', 2],
-    semi: ['error', 'never'],
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': ['error', {
       allow: ['warn', 'error'],
@@ -49,41 +47,38 @@ module.exports = {
     'react/jsx-wrap-multilines': [
       2,
       {
-        'declaration': 'parens',
-        'assignment': 'parens',
-        'return': 'parens-new-line',
-        'arrow': 'parens',
-        'condition': 'ignore',
-        'logical': 'ignore',
-        'prop': 'ignore'
-      }
+        declaration: 'parens',
+        assignment: 'parens',
+        return: 'parens-new-line',
+        arrow: 'parens',
+        condition: 'ignore',
+        logical: 'ignore',
+        prop: 'ignore',
+      },
     ],
-    'indent': [2, 2],
+    indent: [2, 2],
     'react/jsx-sort-props': [2],
     'react/jsx-closing-bracket-location': [
       2,
-      {
-        nonEmpty: false
-      }
     ],
-    'semi': [2, 'never'],
+    semi: [2, 'never'],
     'react/jsx-first-prop-new-line': [2, 'multiline'],
     'react/jsx-max-props-per-line': [
       2,
       {
-        'when': 'always'
-      }
+        when: 'always',
+      },
     ],
     'react/jsx-one-expression-per-line': [
       2,
       {
-        'allow': 'literal'
-      }
+        allow: 'literal',
+      },
     ],
     'react/prop-types': [0],
     'react/self-closing-comp': ['error', {
       component: true,
       html: true,
-    }]
-  }
+    }],
+  },
 }

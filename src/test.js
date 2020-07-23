@@ -6,7 +6,12 @@ export const Test = () => {
   return (
     <>
       {color}
-      <button onClick={() => setColor(`yellow`)}>Change color</button>
+      <button
+        exraprop="second-line-failure"
+        onClick={() => setColor(`yellow`)}
+      >
+Change color
+      </button>
     </>
   )
 }
