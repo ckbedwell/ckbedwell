@@ -6,7 +6,7 @@ const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = env => merge(common(env), {
-  mode: ['production', 'staging'].includes(env) ? 'production' : 'development',
+  mode: 'production',
   devtool: `source-map`,
   output: {
     path: paths.build,
@@ -31,7 +31,7 @@ module.exports = env => merge(common(env), {
               importLoaders: 1,
               modules: {
                 localIdentName: '[name]__[local]',
-              }
+              },
             },
           },
           'postcss-loader',

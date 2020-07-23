@@ -20,8 +20,8 @@ module.exports = (env = defaultEnvironment) => ({
   resolve: {
     modules: [paths.src, 'node_modules'],
     alias: {
-      'react-dom': `@hot-loader/react-dom`
-    }
+      'react-dom': `@hot-loader/react-dom`,
+    },
   },
   // Customize the Webpack build process.
   plugins: [
